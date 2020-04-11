@@ -1,0 +1,9 @@
+describe('dropdown',function(){
+    it('dropdown',function(){
+    //browser.ignoreSynchronization=true;
+    browser.get('https://juliemr.github.io/protractor-demo/');
+    browser.manage().window().maximize();
+    element(by.model('operator')).element(by.css("/html[1]/body[1]/div[1]/div[1]/form[1]/select[1]/option[4]")).click();
+    browser.sleep(5000);
+});
+});

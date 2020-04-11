@@ -10,7 +10,7 @@ var worksheet = workbook.Sheets['Sheet2'];
       element(by.id('username')).sendKeys(worksheet['A2'].v);
       browser.sleep('3000');
       element(by.id('password')).sendKeys(worksheet['B2'].v);
-      browser.sleep('4000');
+      browser.sleep('3000');
       browser.executeScript('window.scrollTo(0,200);');
       element(by.id("kc-login")).click();
       browser.sleep('60000');

@@ -9,7 +9,7 @@ describe('calculator', function () {
         browser.manage().window().maximize();
         for (i = m; i <= N; i++) {
             element(by.model('first')).sendKeys(worksheet['B'+i].v);
-            browser.sleep(2000);
+            browser.sleep(3000);
             element(by.model('second')).sendKeys(worksheet['C'+i].v);
             browser.sleep(2000);
             element(by.buttonText('Go!')).click();
